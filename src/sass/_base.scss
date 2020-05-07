@@ -1,0 +1,24 @@
+// $font_family_1:'Poller One', cursive;
+// $font_family_2:'Leckerli One', cursive;
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+}
+
+body{
+    font-family:font_family_1 ;
+    font-weight: 300;
+    font-size: 4rem;
+    background-color: orangered;
+}
