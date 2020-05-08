@@ -24,19 +24,24 @@ body {
 .header {
   grid-column: full-start / full-end;
   display: grid;
-  grid-template-columns: [full-start] 1fr [full-end center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end]; }
+  grid-template-columns: [full-start] 1fr [full-end center-start] repeat(8, [col-start] minmax(min-content, 12rem) [col-end]) [center-end] 1fr [full-end]; }
   .header__box {
     grid-column: center-start/ center-end;
     background-color: white;
     display: grid;
     grid-template-columns: repeat(8, 1fr); }
   .header__logo {
-    grid-column: 4/ 6;
-    align-self: center; }
+    grid-column: 3/ 7;
+    align-self: center;
+    justify-self: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem; }
     .header__logo .logo-img {
       width: 100%; }
   .header__nav {
-    grid-column: 3/ 7; }
+    grid-column: 3/ 7;
+    align-self: center;
+    margin-bottom: 4rem; }
   .header .nav__list {
     display: flex;
     justify-content: space-between; }
@@ -45,14 +50,14 @@ body {
   .header .nav__link {
     text-decoration: none;
     color: #00030D;
-    font-size: 2.0rem;
+    font-size: 1.6rem;
     font-family: "Arial Black", Gadget, sans-serif;
     font-weight: 700;
     position: relative; }
-    .header .nav__link .link--active {
-      color: #09BFA9; }
     .header .nav__link:hover {
       color: #09BFA9; }
+  .header .link--active {
+    color: #09BFA9; }
 
 .people {
   background-color: white;
@@ -171,7 +176,7 @@ body {
   padding: 1.2rem 2rem;
   background-color: white;
   color: #00030D;
-  font-family: "Poller One", cursive;
+  font-family: "Poller One", regular;
   font-size: 3rem; }
 
 .person {
