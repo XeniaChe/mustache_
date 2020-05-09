@@ -1,26 +1,47 @@
 .main{
 
     grid-column: full-start / full-end;
-    // background-color: grey;
 
     display: grid;
     grid-template-columns: [full-start]  1fr  [full-end center-start] repeat(8, [col-start]  minmax(min-content, 14rem) [col-end]) [center-end]  1fr [full-end] ;
 
+    background-image: url(../images/the-beacon.jpg);
+    background-size: cover;
+
+    // @include respond(phone-700 ) {
+
+    //     background-repeat: no-repeat;
+    //     background-size:  70rem 35rem;
+    // }
 
     &__box{
         grid-column: col-start 5 / center-end;
-        grid-row: 1;
 
         display: grid;
         grid-template-columns: minmax( min-content, max-content);
-        // padding: 5rem;
         grid-row-gap: 2rem;
         align-self: center;
         justify-self: start;
 
         justify-items: start;
+        margin: 4rem;
 
+        @include respond(phone-700 ) {
 
+            grid-column: center-start/ center-end;
+            grid-row: 1;
+            grid-template-columns: minmax( min-content, 70%);
+            // margin-left: 8rem;
+        }
+        
+        @include respond(phone-450) {
+            grid-column: center-start/ center-end;
+            // grid-row: 1;
+            justify-items: center;
+            justify-content: center;
+            // margin-left: 10rem;
+        }
+        
         p{
             font-size: 2.6rem;
             margin: 1.0rem;
@@ -31,6 +52,16 @@
             background-color:$base_color_dark;
             color: $base_color_light;
             padding: 1.2rem 2rem;
+            
+            @include respond(tabl-lands-1200 ) {
+                font-size: 2.3rem;
+            } 
+            @include respond(tabl-lands-1100) {
+                font-size: 2.0rem;
+                padding: 1.0rem 1.8rem;
+                margin: .5rem;
+            }
+
         }
        
     }

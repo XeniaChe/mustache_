@@ -7,20 +7,35 @@
 
     &__box{
          grid-column: center-start/ center-end;
-        // background-color: green;
         display: grid;
         grid-template-columns: repeat(2, minmax(min-content, 1fr));
         align-items: center;
         margin: 4rem 2rem;
 
+        @include respond(phone-450) {
+            grid-template-columns: minmax( min-content, 1fr);
+            justify-items: center;
+        }
+
         p{
             color:$base_color_light;
             font-size: 1.6rem;
+
+            @include respond(phone-450) {
+                order: 0;
+                margin-bottom: 2rem;
+             }
         }
+
+        
     }
 
     &__logos{
-    justify-self: end;
+        justify-self: end;
+
+        @include respond(phone-450) {
+            justify-self: center;
+        }
     }
 
     .logos__list{
@@ -30,6 +45,10 @@
 
     .logos__item:not(:last-child){
         margin-right: 2.5rem;
+
+        @include respond(phone-450) {
+            margin-right: 3.5rem;
+        }
     }
     .logos__link{
         text-decoration: none;

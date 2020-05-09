@@ -14,20 +14,6 @@
         transition: all   0.3s;
         box-shadow: 0 .5rem 1rem rgba(black, 0.4);  
         font-size: 2rem;
-
-        @include respond(tabl-lands-1200) {
-            padding: 1.5rem 2.2rem;
-        }
-
-        @include respond(tabl-port-900) {
-            padding: 1.0rem 1.5rem;
-        }
-
-        @include respond(tabl-port-800) {
-            padding: 1.0rem 1.5rem;
-            font-size: 1.5rem;
-        }
-        
     }
 
     &:hover {

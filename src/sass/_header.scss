@@ -22,8 +22,22 @@
         margin-top: 4rem;
         margin-bottom: 2rem;
 
+        
+        
+
         .logo-img{
             width: 100%;
+            
+
+            @include respond(tabl-lands-1000 ) {
+                width: 80%;
+                transform: translateX(10%);
+            } 
+
+            @include respond(phone-450) {
+                width: 100%;
+                transform: translateX(0);
+            }
         }
     }
 
@@ -32,12 +46,24 @@
         align-self: center;
         margin-bottom: 4rem;
         // margin-top: 2em;
+
+        
+        @include respond(tabl-port-800) {
+            grid-column: 2/ 8;
+        }
+
+       
         
     }
     
     .nav__list{
         display: flex;
         justify-content: space-between;
+
+        @include respond(phone-450) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     .nav__item{
@@ -56,6 +82,10 @@
 
         &:hover{
             color:$base_color_green;
+        }
+
+        @include respond(phone-450) {
+            font-size: 2.0rem;
         }
     }
     .link--active{
