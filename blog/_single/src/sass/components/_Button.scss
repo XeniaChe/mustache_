@@ -1,0 +1,70 @@
+
+.btn {
+    &,
+    &:link, 
+    &:visited {
+        
+        text-decoration: none;
+        text-transform: uppercase; 
+        border: none;
+        cursor: pointer;
+        display: inline-block;   
+        padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+
+        // background-color: $base_color_green;
+        // color: $base_color_light;
+        transition: all   0.3s;
+        box-shadow: 0 .5rem 1rem rgba(black, 0.4);  
+        font-size: 2rem;  
+        font-family: $font_family_3;
+        
+        // text-align: center;
+       
+    }
+
+
+ 
+
+    // &:hover {
+    //     transform: translateY(-0.3rem);
+    //     background-color: $base_color_green_light;
+    // }
+
+
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-0.1rem);
+        box-shadow: 0 .5rem 1rem rgba(black, 0.4);   
+    }
+
+
+    &--black {
+        &,
+        &:link, 
+        &:visited{
+            background-color: $base_color_dark;
+            color: $base_color_light;
+            margin: 0.2rem 2.0rem 0.2rem 2.0rem;;
+            transition: all .3s;
+
+        }
+
+        &:hover {
+            background-color: $base_color_light;
+            color: $base_color_dark;
+            border: 2px solid $base_color_dark;
+
+            transform: translateY(0rem);
+        }
+
+        
+        &:active,
+        &:focus {
+            transform: translateY(0rem);
+        }
+    }
+
+   
+    
+}
