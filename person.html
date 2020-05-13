@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/css/style.css">
-
+    <title>Gallery Single Page</title>
     <link href="https://fonts.googleapis.com/css?family=Leckerli+One|Poller+One|family=Arimo:400,400i,700|family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
-    <title>Home page</title>
+    <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
     <div class="container">
@@ -18,59 +17,33 @@
                 <navigation class="header__nav">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#" class="nav__link link--active"> HOME</a>
+                            <a href="index.html" class="nav__link" target="_self"> HOME</a>
                         </li>
-                        <li class="nav__item  ">
-                            <a href="about.html" class="nav__link " target="_self"> ABOUT</a>
+                        <li class="nav__item ">
+                            <a href="about.html" class="nav__link "> ABOUT</a>
                         </li>
                         <li class="nav__item">
-                            <a href="gallery.html" class="nav__link"> GALLERY</a>
+                            <a href="gallery.html" class="nav__link link--active"> GALLERY</a>
                         </li>
                         <li class="nav__item">
                             <a href="blog.html" class="nav__link"> BLOG</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="nav__link"> CONTACT</a>
+                            <a href="contact.html" class="nav__link"> CONTACT</a>
                         </li>
                     </ul>
                 </navigation>
             </div>
         </header> 
-        <section class="main">
-            <!-- <div class="main__box-img">
-                <img src="./src/images/the-beacon.jpg" alt="" class="main__img">
-            </div> -->
-            <div class="main__box">
-                <h1 class="header__main"> Main Section Header</h1>
-                <div class="main__text">
-                    <p>This page was created  by Xenia Cserkun</p>
-                    <p> using free design pattern</p>
-                    <p>from https://freewebsitetemplates.com/</p>
-                </div>
-                <a href="#" class="btn"> READ MORE</a>
-            </div>
-        </section>
-        <section class="people">
-            <div class="people__box">
-                <div class="person">
-                    <figure class="person__photo">
-                        <img src="./src/images/the-father.jpg" alt="" class="person__photo">
-                    </figure>
-                    <h1 class="header__main"> the father</h1>
-                </div>
-                <div class="person">
-                    <figure class="person__photo">
-                        <img src="./src/images/the-actor.jpg" alt="" class="person__photo">
-                    </figure>
-                    <h1 class="header__main"> the actor</h1>
-                </div>
-                <div class="person">
-                    <figure class="person__photo">
-                        <img src="./src/images/the-nerd.jpg" alt="" class="person__photo">
-                    </figure>
-                    <h1 class="header__main"> the nerd</h1>
-                </div>
-               
+        <section class="single__visual">
+            <h1 class="header__main header__main--large">gallery single post</h1>
+            <figure class="visual__photo-box">
+                <img src="./src/images/mustache1.jpg" alt="photo" class="visual__photo">
+            </figure >
+            <div class="single__story__text">
+                <h2 class="single__header__second single__header__second--large margin__bottom--m"> prim and proper</h2>
+                <p>Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. 
+                    At elementum eu facilisis sed odio morbi quis. Euismod elementum nisi quis eleifend quam adipiscing vitae.</p>
             </div>
         </section>
         <footer class="footer">
@@ -95,6 +68,5 @@
             </div>
         </footer>
     </div>
-    
 </body>
 </html>

@@ -1,0 +1,18 @@
+// 
+
+
+.single__story__text{
+    padding: 4rem;
+    text-align: center;
+    margin-top: 3rem;
+
+    p{
+        font-size: 1.6rem;
+        line-height: 1.7;
+        font-family: $font_family_4;
+    }
+
+    &:not(:first-child){
+        padding-top: 0;
+    }
+}

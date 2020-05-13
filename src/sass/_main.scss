@@ -26,42 +26,57 @@
         justify-items: start;
         margin: 4rem;
 
-        @include respond(phone-700 ) {
-
-            grid-column: center-start/ center-end;
-            grid-row: 1;
-            grid-template-columns: minmax( min-content, 70%);
-            // margin-left: 8rem;
+        @include respond(tabl-port-800) {
+           justify-items: end;
         }
+        // @include respond(phone-700 ) {
+
+        //     grid-column: center-start/ center-end;
+        //     grid-row: 1;
+        //     // grid-template-columns: minmax( min-content, 70%);
+            
+        // }
         
-        @include respond(phone-450) {
+        @include respond(phone-500) {
             grid-column: center-start/ center-end;
-            // grid-row: 1;
             justify-items: center;
             justify-content: center;
-            // margin-left: 10rem;
         }
         
-        p{
-            font-size: 2.6rem;
-            margin: 1.0rem;
-            margin-left: 0;
+        .main__text{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
 
-            display: inline-block;
-            text-align: center;
-            background-color:$base_color_dark;
-            color: $base_color_light;
-            padding: 1.2rem 2rem;
-            
-            @include respond(tabl-lands-1200 ) {
-                font-size: 2.3rem;
-            } 
-            @include respond(tabl-lands-1100) {
-                font-size: 2.0rem;
-                padding: 1.0rem 1.8rem;
-                margin: .5rem;
+            @include respond(tabl-port-800) {
+                align-items: flex-end;
             }
 
+            @include respond(phone-500) {
+                align-items: center;
+            }
+ 
+            p{
+                font-size: 2.6rem;
+                margin: 1.0rem;
+                margin-left: 0;
+    
+                display: inline-block;
+                text-align: center;
+                background-color:$base_color_dark;
+                color: $base_color_light;
+                padding: 1.2rem 2rem;
+                
+                @include respond(tabl-lands-1200 ) {
+                    font-size: 2.3rem;
+                } 
+                @include respond(tabl-lands-1100) {
+                    font-size: 2.0rem;
+                    padding: 1.0rem 1.8rem;
+                    margin: .5rem;
+                }
+               
+            }
         }
        
     }

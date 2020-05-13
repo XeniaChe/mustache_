@@ -3,18 +3,17 @@
     &,
     &:link, 
     &:visited {
-       
+        
         text-decoration: none;
         text-transform: uppercase;  border: none;
         cursor: pointer;
         display: inline-block;   
-        padding: 2.0rem 3rem;
+        padding:2.0rem 3rem;
         background-color: $base_color_green;
         color: $base_color_light;
+        transition: all   0.3s;
         box-shadow: 0 .5rem 1rem rgba(black, 0.4);  
         font-size: 2rem;
-
-        transition: all .2s;
 
         @include respond(tabl-lands-1200) {
             padding: 1.5rem 2.2rem;
@@ -32,41 +31,17 @@
     }
 
     &:hover {
-        background-color: $base_color_green_light;
         transform: translateY(-0.3rem);
+        background-color: $base_color_green_light;
     }
 
 
     &:active,
     &:focus {
         outline: none;
-        box-shadow: 0 .5rem 1rem rgba(black, 0.4); 
-        
-        transform: translateY(0rem);
+        transform: translateY(-0.1rem);
+        box-shadow: 0 .5rem 1rem rgba(black, 0.4);   
     }
 
-    &--black {
-        &,
-        &:link, 
-        &:visited{
-            border: inherit;
-            background-color: $base_color_dark;
-            color: $base_color_light;
-            padding: 0.5rem 1.5rem;
-            font-size: 2rem;
-
-            
-
-        }
-
-        &:hover {
-            background-color: $base_color_light;
-            color: $base_color_dark;
-            border: 2px solid $base_color_dark;
-
-            
-
-        }
-    }
-
+    
 }

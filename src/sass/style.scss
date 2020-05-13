@@ -8,4 +8,28 @@
 @import './_main';
 @import './components/_Button';
 @import './components/typography';
-@import './components/person'
+@import './abstract/helpers';
+
+// GALLERY
+@import './pages/gallery/gallery-title';
+@import './pages/gallery/gallery';
+@import './pages/gallery/components/gallery-typography';
+@import './pages/gallery/gallery-layout';
+
+// GALLERY SINGLE
+@import './pages/gallery-single/person';
+@import './pages/gallery-single/single-story';
+@import './pages/gallery-single/components/single-typography';
+@import './pages/gallery-single/single-visual';
+
+
+//ABOUT 
+@import './pages/about/about-layout';
+@import './pages/about/about-story';
+@import './pages/about/about-visual';
+
+//BLOG
+@import './pages/blog/blog';
+@import './pages/blog/layout';
+@import './pages/blog/blog-typography';
+
