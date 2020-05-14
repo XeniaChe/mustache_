@@ -1,0 +1,13 @@
+.blog-single__text{
+
+    grid-column: col-start 2 / col-end 7;
+    // grid-column: center-start/ center-end;
+
+    text-align: center;
+
+    p{
+        font-size: 1.6rem;
+
+        margin-bottom: 5rem;
+    }
+}
