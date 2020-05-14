@@ -60,7 +60,7 @@
         display: flex;
         justify-content: space-between;
 
-        @include respond(phone-450) {
+        @include respond(phone-500) {
             flex-direction: column;
             align-items: center;
         }
@@ -84,8 +84,12 @@
             color:$base_color_green;
         }
 
-        @include respond(phone-450) {
+        @include respond(phone-600 ) {
             font-size: 2.0rem;
+        }
+        @include respond(phone-500) {
+            font-size: 2.3rem;
+            margin: 2.0rem;
         }
     }
     .link--active{

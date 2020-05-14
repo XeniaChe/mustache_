@@ -13,7 +13,7 @@
         color: $base_color_light;
         box-shadow: 0 .5rem 1rem rgba(black, 0.4);  
         font-size: 2rem;
-
+        font-family: $font_family_1;
         transition: all .2s;
 
         @include respond(tabl-lands-1200) {
@@ -54,19 +54,15 @@
             color: $base_color_light;
             padding: 0.5rem 1.5rem;
             font-size: 2rem;
-
-            
-
+            border: 2px solid transparent;
         }
 
         &:hover {
             background-color: $base_color_light;
             color: $base_color_dark;
             border: 2px solid $base_color_dark;
-
-            
-
         }
     }
 
 }
+

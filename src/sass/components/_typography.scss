@@ -1,18 +1,4 @@
-// .header__main{
-//     display: inline-block;
-//     text-align: center;
-//     padding: 1.2rem 2rem;
-//     background-color: $base_color_light;
-//     color: $base_color_dark;
-//     font-family: $font_family_1;
-//     font-size: 3rem;
 
-//     @include respond(tabl-lands-1000) {
-//         font-size: 2.5rem;
-//     }
-
-
-// }
 
 .header__main{
     display: inline-block;
@@ -31,6 +17,10 @@
         color: $base_color_light;
       
     }
+
+    @include respond(phone-700) {
+        font-size: 2.2rem;
+    }
 }
 
 .header__second{
@@ -38,15 +28,24 @@
     text-align: center;
 
     color: $base_color_dark;
-    font-family: $font_family_1;
+    font-family: $font_family_3;
     font-size: 2.2rem; 
     padding: 1.2rem .5rem;
+    text-transform: uppercase;
 
     &--large{
+        // font-size: 3.5rem;
         text-transform: uppercase;
         background-color: $base_color_dark;
         color: $base_color_light;
       
     }
     
+
+    @include respond(phone-700) {
+        font-size: 2.0rem;
+    }
 }
+
+
+

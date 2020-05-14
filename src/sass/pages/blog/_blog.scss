@@ -20,12 +20,23 @@
             margin-bottom: 0;
         }
 
+        @include respond(phone-700) {
+            grid-template-columns: 1fr;
+            grid-template-rows: min-content minmax(min-content, max-content);
+        }
         
         &__image{
             border: 2px solid $base_color_dark;
+            overflow: hidden;
 
             img {
                 display: block;
+                object-fit: cover;
+                height: 100%;
+
+                @include respond(phone-700) {
+                   width: 100%;
+                }
             }
         }
 
@@ -37,6 +48,13 @@
 
             display: grid;
             justify-items: center;
+
+
+            @include respond(phone-700) {
+                border: 2px solid $base_color_dark;
+                border-top: none;
+
+            }
 
             &:last-child{
                 align-items: end;
